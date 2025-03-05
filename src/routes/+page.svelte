@@ -2,6 +2,7 @@
 </script>
 
 <div>
-	<a href="/newPosting" class="rounded bg-sky-500/100 p-2">Add Job </a>
-	<button class="m-3 rounded-sm bg-sky-500/100 p-2">filter</button>
+	<a href="/newPosting" class="rounded bg-sky-500/50 p-2">Add Job </a>
+	<button href="/company" class="m-3 rounded-sm bg-sky-500/50 p-2">Looking for candidates</button>
+	<button class="m-3 rounded-sm bg-sky-500/50 p-2">Looking for career</button>
 </div>

@@ -195,8 +195,8 @@
 	</div>
 
 	<!-- Location Section -->
-	<div class="mb-8 rounded-sm bg-emerald-100/60 p-6">
-		<h3 class="mb-4 flex items-center text-xl font-semibold text-emerald-800">
+	<div class="mb-8 rounded-sm bg-violet-100 p-6">
+		<h3 class="mb-4 flex items-center text-xl font-semibold text-violet-800">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				class="mr-2 h-6 w-6"
@@ -226,7 +226,7 @@
 					id="is_remote"
 					name="isRemote"
 					type="checkbox"
-					class="h-5 w-5 rounded-md border-gray-300 text-emerald-600 focus:ring-emerald-500"
+					class="h-5 w-5 rounded-md border-gray-300 text-violet-600 focus:ring-violet-500"
 					bind:checked={isRemote}
 				/>
 				<span class="ml-2 text-gray-700">Remote Position</span>
@@ -237,7 +237,7 @@
 					id="multiple_locations"
 					name="multipleLocations"
 					type="checkbox"
-					class="h-5 w-5 rounded-md border-gray-300 text-emerald-600 focus:ring-emerald-500"
+					class="h-5 w-5 rounded-md border-gray-300 text-violet-600 focus:ring-violet-500"
 					bind:checked={multipleLocations}
 				/>
 				<span class="ml-2 text-gray-700">Multiple Locations</span>
@@ -269,7 +269,7 @@
 						</svg>
 					</div>
 					<input
-						class="block w-full rounded-md border-gray-300 pl-10 focus:border-emerald-500 focus:ring-emerald-500"
+						class="block w-full rounded-md border-gray-300 pl-10 focus:border-emerald-500 focus:ring-violet-500"
 						id="city"
 						name="city"
 						type="text"
@@ -299,7 +299,7 @@
 						</svg>
 					</div>
 					<input
-						class="block w-full rounded-md border-gray-300 pl-10 focus:border-emerald-500 focus:ring-emerald-500"
+						class="block w-full rounded-md border-gray-300 pl-10 focus:border-violet-500 focus:ring-violet-500"
 						id="province"
 						name="province"
 						type="text"
@@ -329,7 +329,7 @@
 						</svg>
 					</div>
 					<input
-						class="block w-full rounded-md border-gray-300 pl-10 focus:border-emerald-500 focus:ring-emerald-500"
+						class="block w-full rounded-md border-gray-300 pl-10 focus:border-violet-500 focus:ring-violet-500"
 						id="country"
 						name="country"
 						type="text"
@@ -346,7 +346,7 @@
 		{#if multipleLocations}
 			<button
 				type="button"
-				class="mt-4 inline-flex items-center rounded-md border border-transparent bg-emerald-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+				class="mt-4 inline-flex items-center rounded-md border border-transparent bg-violet-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2"
 				onclick={addLocation}
 			>
 				<svg
@@ -372,7 +372,7 @@
 				<h4 class="flex items-center font-medium text-gray-700">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						class="mr-2 h-5 w-5 text-emerald-500"
+						class="mr-2 h-5 w-5 text-violet-500"
 						fill="none"
 						viewBox="0 0 24 24"
 						stroke="currentColor"
@@ -429,8 +429,8 @@
 	</div>
 
 	<!-- Job Details Section -->
-	<div class="mb-8 rounded-sm bg-purple-100 p-6">
-		<h3 class="mb-4 flex items-center text-xl font-semibold text-purple-800">
+	<div class="mb-8 rounded-sm bg-rose-100/60 p-6">
+		<h3 class="mb-4 flex items-center text-xl font-semibold text-rose-800">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				class="mr-2 h-6 w-6"
@@ -471,7 +471,7 @@
 						</svg>
 					</div>
 					<select
-						class="block w-full rounded-md border-gray-300 pl-10 focus:border-purple-500 focus:ring-purple-500"
+						class="block w-full rounded-md border-gray-300 pl-10 focus:border-rose-500 focus:ring-rose-500"
 						id="employment"
 						name="employmentTypeId"
 					>
@@ -498,13 +498,13 @@
 								id="isPermanent"
 								name="permanentStatus"
 								value="permanent"
-								class="h-4 w-4 border-gray-300 text-purple-600 focus:ring-purple-500"
+								class="h-4 w-4 border-gray-300 text-rose-600 focus:ring-rose-500"
 							/>
 							<label for="isPermanent" class="ml-3 block text-sm font-medium text-gray-700">
 								<div class="flex items-center">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
-										class="mr-1 h-5 w-5 text-purple-500"
+										class="mr-1 h-5 w-5 text-rose-500"
 										fill="none"
 										viewBox="0 0 24 24"
 										stroke="currentColor"
@@ -526,13 +526,13 @@
 								id="notPermanent"
 								name="permanentStatus"
 								value="temporary"
-								class="h-4 w-4 border-gray-300 text-purple-600 focus:ring-purple-500"
+								class="h-4 w-4 border-gray-300 text-rose-600 focus:ring-rose-500"
 							/>
 							<label for="notPermanent" class="ml-3 block text-sm font-medium text-gray-700">
 								<div class="flex items-center">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
-										class="mr-1 h-5 w-5 text-purple-500"
+										class="mr-1 h-5 w-5 text-rose-500"
 										fill="none"
 										viewBox="0 0 24 24"
 										stroke="currentColor"
@@ -574,7 +574,7 @@
 						</svg>
 					</div>
 					<select
-						class="block w-full rounded-md border-gray-300 pl-10 focus:border-purple-500 focus:ring-purple-500"
+						class="block w-full rounded-md border-gray-300 pl-10 focus:border-rose-500 focus:ring-rose-500"
 						id="experience"
 						name="experienceLevelId"
 					>
@@ -611,7 +611,7 @@
 						</svg>
 					</div>
 					<select
-						class="block w-full rounded-md border-gray-300 pl-10 focus:border-purple-500 focus:ring-purple-500"
+						class="block w-full rounded-md border-gray-300 pl-10 focus:border-rose-500 focus:ring-rose-500"
 						id="education"
 						name="educationLevelId"
 					>

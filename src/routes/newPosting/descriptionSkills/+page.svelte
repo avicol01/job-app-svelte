@@ -1,7 +1,5 @@
 <script>
 	let duplicateSkill = $state(false);
-	let deadlineRequired = $state('');
-
 	let skills = $state([]);
 	let skillName = $state('');
 
@@ -35,7 +33,7 @@
 	}
 </script>
 
-<div class="rounded- mb-8 bg-purple-100/60 p-6">
+<div class="rounded- mb-8 border-2 border-purple-300 p-6 shadow-sm">
 	<h3 class="mb-4 flex items-center text-xl font-semibold text-purple-800">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

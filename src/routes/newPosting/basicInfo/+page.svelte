@@ -3,7 +3,7 @@
 </script>
 
 <!-- Basic Job Information Section -->
-<div class="mb-8 rounded-sm bg-indigo-100 p-6">
+<div class="mb-8 rounded-sm border-2 border-indigo-200 p-6 shadow-sm">
 	<h3 class="mb-4 flex items-center text-xl font-semibold text-indigo-800">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

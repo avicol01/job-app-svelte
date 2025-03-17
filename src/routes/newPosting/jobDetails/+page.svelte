@@ -2,7 +2,7 @@
 	//export let form;
 </script>
 
-<div class="mb-8 rounded-sm bg-rose-100/60 p-6">
+<div class="mb-8 rounded-sm border-2 border-rose-200 p-6 shadow-sm">
 	<h3 class="mb-4 flex items-center text-xl font-semibold text-rose-800">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

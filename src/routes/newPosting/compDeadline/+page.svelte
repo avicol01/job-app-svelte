@@ -1,8 +1,9 @@
 <script>
 	let deadlineRequired = $state(true);
+	let touched = $state(false);
 </script>
 
-<div class="mb-8 rounded-sm bg-blue-100 p-6">
+<div class="mb-8 rounded-sm border-2 border-blue-200 p-6 shadow-sm">
 	<h3 class="mb-4 flex items-center text-xl font-semibold text-blue-800">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +58,7 @@
 				<label for="application-deadline" class="block text-sm font-medium text-gray-700"
 					>Application Deadline</label
 				>
-				{#if !deadlineRequired}
+				{#if !deadlineRequired && touched}
 					<p class="text-sm text-red-600">Deadline Required</p>
 				{/if}
 			</div>
@@ -85,6 +86,7 @@
 					type="date"
 					required
 					bind:value={deadlineRequired}
+					onblur={() => (touched = true)}
 				/>
 			</div>
 		</div>

@@ -8,15 +8,8 @@
 	let multipleLocations = $state(false);
 	let locations = $state([]);
 	let duplicateLocation = $state(false);
-	let formSubmitted = $state(false);
+	let touched = $state(false);
 
-	function handleSubmit(event) {
-		formSubmitted = true;
-
-		if (!isRemote && !city.trim() && !province.trim() && !country.trim()) {
-			event.preventDefault();
-		}
-	}
 	function checkDuplicateLocation() {
 		duplicateLocation = '';
 
@@ -63,7 +56,7 @@
 </script>
 
 <!-- Location Section -->
-<div class="mb-8 rounded-sm bg-violet-100 p-6">
+<div class="mb-8 rounded-sm border-2 border-violet-300 p-6 shadow-sm">
 	<h3 class="mb-4 flex items-center text-xl font-semibold text-violet-800">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +82,7 @@
 	</h3>
 
 	<div class="mb-4 flex flex-wrap gap-4">
-		<label class="flex items-center rounded-lg bg-white p-3 shadow-sm transition hover:shadow">
+		<label class="flex items-center rounded-lg bg-violet-50 p-3 shadow-sm transition hover:shadow">
 			<input
 				id="is_remote"
 				name="isRemote"
@@ -100,7 +93,7 @@
 			<span class="ml-2 text-gray-700">Remote Position</span>
 		</label>
 
-		<label class="flex items-center rounded-lg bg-white p-3 shadow-sm transition hover:shadow">
+		<label class="flex items-center rounded-lg bg-violet-50 p-3 shadow-sm transition hover:shadow">
 			<input
 				id="multiple_locations"
 				name="multipleLocations"
@@ -143,6 +136,7 @@
 					type="text"
 					placeholder="Enter City"
 					bind:value={city}
+					onblur={() => (touched = true)}
 				/>
 			</div>
 		</div>
@@ -173,6 +167,7 @@
 					type="text"
 					placeholder="Enter Province/State"
 					bind:value={province}
+					onblur={() => (touched = true)}
 				/>
 			</div>
 		</div>
@@ -203,6 +198,7 @@
 					type="text"
 					placeholder="Enter Country"
 					bind:value={country}
+					onblur={() => (touched = true)}
 				/>
 			</div>
 		</div>
@@ -289,7 +285,7 @@
 		</div>
 	{/if}
 
-	{#if !isRemote && !city && !province && !country && formSubmitted}
+	{#if !isRemote && !city && !province && !country && touched}
 		<p class="mt-4 rounded-md bg-red-100 p-2 text-sm text-red-700">
 			Please select either Remote Position or enter at least one location detail.
 		</p>
